@@ -1,5 +1,9 @@
 package main
 
-import {
-	"github.com/gin-gonic/gin"
+import (
+	"blog/routers"
+)
+
+func main() {
+	routers.InitRouter()
 }
