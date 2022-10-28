@@ -2,8 +2,8 @@ package routers
 
 import (
 	"net/http"
-	"blog/api/v1"
 	"blog/utils"
+	"blog/api/v1"
 
 	"github.com/gin-gonic/gin"
 )
