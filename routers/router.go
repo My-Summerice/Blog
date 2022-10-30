@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"net/http"
+	_"net/http"
 	"blog/utils"
 	"blog/api/v1"
 
