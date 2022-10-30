@@ -4,6 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// 文章类型
 type Article struct {
 	Category	Category
 	gorm.Model
