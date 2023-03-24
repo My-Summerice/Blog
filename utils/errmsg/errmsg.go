@@ -1,7 +1,5 @@
 package errmsg
 
-import ()
-
 const (
 	SUCCESS = 200
 	ERROR   = 500
@@ -15,16 +13,16 @@ const (
 	ERROR_TOKEN_WRONG      = 1006
 	ERROR_TOKEN_TYPE_WRONG = 1007
 
-	// code = 200... 文章模块的错误
-
-	// code = 300... 分类模块的错误
+	// code = 200... 分类模块的错误
+    ERROR_CATENAME_USED    = 2001
+	// code = 300... 文章模块的错误
 
 )
 
 // 构建一个错误码map
 var codeMsg = map[int]string{
-	SUCCESS:                "OK",
-	ERROR:                  "FAIL",
+	SUCCESS:                "成功",
+	ERROR:                  "失败",
 	ERROR_USERNAME_USED:    "用户名已存在！",
 	ERROR_PASSWORD_WRONG:   "密码错误！",
 	ERROR_USER_NOT_EXIST:   "用户不存在！",
@@ -32,6 +30,8 @@ var codeMsg = map[int]string{
 	ERROR_TOKEN_RUNTIME:    "token已过期",
 	ERROR_TOKEN_WRONG:      "token不正确",
 	ERROR_TOKEN_TYPE_WRONG: "token格式错误",
+
+    ERROR_CATENAME_USED:    "分类已存在！",
 }
 
 // 构建一个输出错误信息的函数
